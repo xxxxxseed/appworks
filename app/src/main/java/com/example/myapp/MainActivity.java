@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     //객체 선언
     TextView text1;
     Button btn;
+    //boolean run = false;    //상태 변수
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +23,36 @@ public class MainActivity extends AppCompatActivity {
         text1 = findViewById(R.id.text1);
         btn = findViewById(R.id.btn);
 
-        //버튼 클릭 이벤트
-        btn.setOnClickListener(new View.OnClickListener() {
+        View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                text1.setText("안녕하세요");
+                //text1.setText("안녕하세요");
+                if(view==btn){
+                    text1.setText("안녕하세요");
+                }
             }
-        });
+        };
+
+        btn.setOnClickListener(listener);
+
+        //버튼 클릭 이벤트
+        /*btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //text1.setText("안녕하세요");
+
+
+                if(run==false){
+
+                    text1.setText("안녕하세요");
+                    run = true;
+                }
+                if(run==true){
+
+                    text1.setText("Hello");
+                    run = false;
+                }
+            }
+        });*/
     }
 }
