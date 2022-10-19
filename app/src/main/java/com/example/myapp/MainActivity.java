@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     //객체 선언
     TextView text1;
     Button btn;
-    //boolean run = false;    //상태 변수
+    static boolean run = false;    //상태 변수
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
                 //text1.setText("안녕하세요");
                 if(view==btn){
                     text1.setText("안녕하세요");
+                    //run = true;
+                }
+                if(view==btn){
+                    text1.setText("Hello");
+                    //run = false;
                 }
             }
         };

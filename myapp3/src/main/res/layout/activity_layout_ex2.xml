@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RelativeLayout: 이미 배치된 뷰를 기준으로 다른 뷰의 위치를 지정하는 레이아웃 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".LayoutEx2">
+
+    <!-- align 속성
+            layout_alignTop: 기준 뷰와 윗 부분 정렬
+            layout_alignLeft: 기준 뷰와 왼쪽 정렬
+            layout_alignBaseline: 기준 뷰와 텍스트 기준선을 정렬
+            layout_alignParentBottom: 부모의 아랫부분에 뷰의 하단을 위치
+            layout_toRightof: 기준 뷰의 오른쪽에 위치 -->
+    <ImageView
+        android:id="@+id/onair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onair" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뽀로로"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/onair"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="노는게 제일 좋아"
+        android:layout_below="@id/name"
+        android:layout_alignLeft="@id/name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10월 19일"
+        android:layout_alignBaseline="@id/name"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

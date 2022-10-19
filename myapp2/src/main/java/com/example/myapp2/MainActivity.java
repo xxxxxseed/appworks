@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //객체 생성
         btn_vis_true = findViewById(R.id.btn_vis_true);
         btn_vis_false = findViewById(R.id.btn_vis_false);
         textView = findViewById(R.id.textView);
