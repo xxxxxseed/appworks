@@ -16,3 +16,6 @@ rootProject.name = "MyApp"
 include ':app'
 include ':myapp2'
 include ':myapp3'
+include ':myapp4'
+include ':app_intent'
+include ':app_permission'

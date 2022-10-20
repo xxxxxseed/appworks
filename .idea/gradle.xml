@@ -11,8 +11,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app_intent" />
+            <option value="$PROJECT_DIR$/app_permission" />
             <option value="$PROJECT_DIR$/myapp2" />
             <option value="$PROJECT_DIR$/myapp3" />
+            <option value="$PROJECT_DIR$/myapp4" />
           </set>
         </option>
       </GradleProjectSettings>
